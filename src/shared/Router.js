@@ -9,6 +9,7 @@ import Home from '../pages/Home.jsx';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Works from '../pages/Works';
+import Work from '../pages/Work';
 import Layout from './Layout';
 
 const Router = () => {
@@ -20,6 +21,7 @@ const Router = () => {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="works" element={<Works />} />
+          <Route path="works/:id" element={<Work />} />
         </Routes>
       </Layout>
     </BrowserRouter>
