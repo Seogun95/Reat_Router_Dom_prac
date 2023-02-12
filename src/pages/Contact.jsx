@@ -4,7 +4,7 @@ import * as S from '../styled/ShareStyle';
 const Contact = () => {
   return (
     <>
-      <S.DivFlex direction={'row'}>
+      <S.DivFlex>
         <S.MyH1> Contact 페이지 입니다.</S.MyH1>
       </S.DivFlex>
     </>
