@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 //styled components
 import * as S from '../styled/ShareStyle';
@@ -7,6 +7,9 @@ import Btn from '../components/Btn';
 
 const Home = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log('location -->', location);
+
   const onAnchorBtnHandler = () => navigate('/works');
 
   return (
